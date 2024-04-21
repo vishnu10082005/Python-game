@@ -1,0 +1,29 @@
+1. Start
+2. Define a list called RPS containing 'rock' (r), 'paper' (p), and 'scissors' (s)
+3. Define a function called points():
+    a. Ask the user for how many points they want to play the game
+    b. Return the value entered by the user
+4. Define a function called user():
+    a. Ask the user to enter their choice: rock, paper, or scissors
+    b. Convert the input to lowercase
+    c. If the choice is not valid, ask the user to enter again until a valid choice is made
+    d. Return the user's choice
+5. Define a function called computer():
+    a. Randomly select a choice from the list RPS
+    b. Return the computer's choice
+6. Define a function called play():
+    a. Display instructions for the game
+    b. Call the points() function to get the target points for winning
+    c. Initialize variables Up (user points) and Cp (computer points) to 0
+    d. Start a loop that continues until either Up or Cp reaches the target points:
+        i. Call the user() function to get the user's choice
+        ii. Call the computer() function to get the computer's choice
+        iii. Compare the choices and determine the winner of the round:
+            - If the user wins, increment Up by 1
+            - If it's a tie, no one gets a point
+            - If the computer wins, increment Cp by 1
+        iv. Display the computer's choice and the current points of both the user and the computer
+    e. Once the loop ends, determine the overall winner based on who reached the target points first
+    f. Print the winner
+7. If the program is run directly (not imported into another module), call the play() function to start the game
+8. End
